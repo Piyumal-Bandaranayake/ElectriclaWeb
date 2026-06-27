@@ -199,9 +199,8 @@ require_once 'config.php';
 
             <!-- Navigation Call-to-Action (Visible on desktop) -->
             <div class="nav-cta">
-                <a href="tel:<?php echo $phone_number_raw; ?>" class="btn btn-amber btn-pill" id="navCallBtn">
-                    <i class="fa-solid fa-phone" aria-hidden="true"></i>
-                    <span>Call </span>
+                <a href="https://wa.me/<?php echo $whatsapp_number_raw; ?>?text=Hi%20Dauglas%20Electrical%20Solution,%20I'd%20like%20to%20book%20a%20service." target="_blank" rel="noopener noreferrer" class="btn btn-amber btn-pill" id="navBookBtn">
+                    <span>Book Now</span>
                 </a>
             </div>
 
