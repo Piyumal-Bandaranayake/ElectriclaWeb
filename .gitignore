@@ -1,0 +1,67 @@
+# ========================
+# OS Generated Files
+# ========================
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+
+# ========================
+# IDE / Editor Files
+# ========================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.project
+.settings/
+*.code-workspace
+
+# ========================
+# Sensitive / Config Files
+# ========================
+config.php
+
+# ========================
+# Logs
+# ========================
+*.log
+error_log
+access_log
+
+# ========================
+# Dependencies
+# ========================
+node_modules/
+vendor/
+composer.lock
+
+# ========================
+# Environment Files
+# ========================
+.env
+.env.local
+.env.production
+.env.*.local
+
+# ========================
+# Compiled / Cached Files
+# ========================
+*.cache
+*.tmp
+*.bak
+*.old
+
+# ========================
+# Upload Directories (if added later)
+# ========================
+uploads/
+temp/
+
+# ========================
+# Gemini / AI Tool Files
+# ========================
+.agents/
+.gemini/
