@@ -2571,7 +2571,8 @@ textarea.form-control {
 
 .marquee-img {
     height: 260px;
-    width: auto;
+    width: 320px;
+    max-width: none;
     border-radius: 16px;
     object-fit: cover;
     flex-shrink: 0;
@@ -2592,6 +2593,17 @@ textarea.form-control {
 
     100% {
         transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .marquee-fade {
+        width: 50px;
+    }
+    
+    .marquee-img {
+        height: 180px;
+        width: 220px;
     }
 }
 
