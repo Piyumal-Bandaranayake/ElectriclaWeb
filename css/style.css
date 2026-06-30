@@ -233,8 +233,25 @@ img {
 
 .navbar.scrolled {
     height: 58px;
-    background-color: var(--color-navy-dark);
+    background-color: var(--color-white);
     box-shadow: var(--shadow-medium);
+}
+
+.navbar.scrolled .logo-text,
+.navbar.scrolled .nav-link {
+    color: var(--color-text-dark);
+}
+
+.navbar.scrolled .logo-sub {
+    color: var(--color-text-muted);
+}
+
+.navbar.scrolled .nav-link:hover {
+    color: var(--color-amber);
+}
+
+.navbar.scrolled .hamburger span {
+    background-color: var(--color-text-dark);
 }
 
 .navbar .btn-pill {
