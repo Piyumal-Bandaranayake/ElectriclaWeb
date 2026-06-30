@@ -93,21 +93,22 @@ include_once 'header.php';
                 <a href="https://wa.me/<?php echo $whatsapp_number_raw; ?>?text=Hi%20Dauglas%20Electrical%20Solution,%20I'd%20like%20a%20quote%20for%20Safety%20Inspections%20service." class="btn-quote" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" style="margin-right:6px;"></i>Get a Quote</a>
             </article>
 
-            <!-- Card 5: Ceiling Fans & Exhaust Fans -->
-            <article class="detailed-service-card" id="fans">
+            <!-- Card 5: Power Supply & Distribution Core -->
+            <article class="detailed-service-card" id="power-supply">
                 <div class="detailed-service-card-top">
                     <div class="detailed-service-icon" aria-hidden="true">
-                        <i class="fa-solid fa-fan"></i>
+                        <i class="fa-solid fa-bolt"></i>
                     </div>
-                    <h3>Ceiling Fans &amp; Exhaust Fans</h3>
-                    <p class="detailed-service-desc">Professional cooling ceiling fan installations and robust ventilation exhaust systems for bathrooms or kitchens.</p>
-                    <ul class="detailed-sub-services" aria-label="Ceiling Fans &amp; Exhaust Fans sub-services">
-                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Ceiling Fan Installation</li>
-                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Bathroom Exhaust Fans</li>
-                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Smart Remote Configurations</li>
+                    <h3>Power Supply &amp; Distribution Core</h3>
+                    <p class="detailed-service-desc">The backbone of an industrial plant transforms bulk utility power into usable plant-level voltages:</p>
+                    <ul class="detailed-sub-services" aria-label="Power Supply &amp; Distribution Core sub-services">
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Step-Down Transformers</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Main Distribution Panels (MDP)</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Busbar Trunking Systems</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Secondary Distribution Panels (SDP)</li>
                     </ul>
                 </div>
-                <a href="https://wa.me/<?php echo $whatsapp_number_raw; ?>?text=Hi%20Dauglas%20Electrical%20Solution,%20I'd%20like%20a%20quote%20for%20Ceiling%20Fans%20%26%20Exhaust%20Fans%20service." class="btn-quote" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" style="margin-right:6px;"></i>Get a Quote</a>
+                <a href="https://wa.me/<?php echo $whatsapp_number_raw; ?>?text=Hi%20Dauglas%20Electrical%20Solution,%20I'd%20like%20a%20quote%20for%20Power%20Supply%20%26%20Distribution%20Core%20service." class="btn-quote" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" style="margin-right:6px;"></i>Get a Quote</a>
             </article>
 
             <!-- Card 6: Emergency Repairs -->
@@ -125,6 +126,23 @@ include_once 'header.php';
                     </ul>
                 </div>
                 <a href="https://wa.me/<?php echo $whatsapp_number_raw; ?>?text=Hi%20Dauglas%20Electrical%20Solution,%20I'd%20like%20a%20quote%20for%20Emergency%20Repairs%20service." class="btn-quote" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" style="margin-right:6px;"></i>Get a Quote</a>
+            </article>
+
+            <!-- Card 7: Containment & Cable Management -->
+            <article class="detailed-service-card" id="containment">
+                <div class="detailed-service-card-top">
+                    <div class="detailed-service-icon" aria-hidden="true">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <h3>Containment &amp; Cable Management</h3>
+                    <p class="detailed-service-desc">Industrial cables must be shielded against physical degradation, oils, and environmental stressors:</p>
+                    <ul class="detailed-sub-services" aria-label="Containment &amp; Cable Management sub-services">
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Heavy-Duty Conduits</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Cable Trays &amp; Ladders</li>
+                        <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Industrial Cables</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/<?php echo $whatsapp_number_raw; ?>?text=Hi%20Dauglas%20Electrical%20Solution,%20I'd%20like%20a%20quote%20for%20Containment%20%26%20Cable%20Management%20service." class="btn-quote" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" style="margin-right:6px;"></i>Get a Quote</a>
             </article>
         </div>
     </div>
