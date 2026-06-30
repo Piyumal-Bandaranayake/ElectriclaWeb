@@ -1200,6 +1200,7 @@ img {
     }
 
     /* Sticky Nav */
+
     .nav-cta {
         display: none;
     }
@@ -1214,7 +1215,7 @@ img {
         left: -100%;
         width: 100%;
         height: calc(100vh - var(--header-height));
-        background-color: var(--color-navy-dark);
+        background-color: var(--color-white);
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
@@ -1231,7 +1232,7 @@ img {
 
     .nav-link {
         font-size: 1.2rem;
-        color: var(--color-white);
+        color: var(--color-navy);
     }
 
     .hamburger.active span:nth-child(1) {
