@@ -42,8 +42,8 @@ require_once 'config.php';
     <meta name="twitter:image" content="<?php echo $protocol . $domainName; ?>/assets/logo2.png">
     
     <!-- Favicon & Search Engine Logo -->
-    <link rel="icon" type="image/png" href="/assets/logo2.png">
-    <link rel="apple-touch-icon" href="/assets/logo2.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon-180.png">
     
     <!-- Structured Data for Google to recognize the business -->
     <script type="application/ld+json">
@@ -52,8 +52,8 @@ require_once 'config.php';
       "@type": "Electrician",
       "name": "<?php echo htmlspecialchars($business_name); ?>",
       "url": "<?php echo $protocol . $domainName; ?>/",
-      "logo": "<?php echo $protocol . $domainName; ?>/assets/logo2.png",
-      "image": "<?php echo $protocol . $domainName; ?>/assets/logo2.png",
+      "logo": "<?php echo $protocol . $domainName; ?>/assets/logo.png",
+      "image": "<?php echo $protocol . $domainName; ?>/assets/logo.png",
       "description": "<?php echo htmlspecialchars($default_description); ?>",
       "telephone": "<?php echo $phone_number_raw; ?>",
       "priceRange": "$$",
