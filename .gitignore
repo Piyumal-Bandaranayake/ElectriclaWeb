@@ -11,7 +11,6 @@ desktop.ini
 # ========================
 # IDE / Editor Files
 # ========================
-.vscode/
 .idea/
 *.sublime-project
 *.sublime-workspace
@@ -41,9 +40,6 @@ composer.lock
 # ========================
 # Environment Files
 # ========================
-.env
-.env.local
-.env.production
 .env.*.local
 
 # ========================
@@ -65,3 +61,4 @@ temp/
 # ========================
 .agents/
 .gemini/
+config.bat
