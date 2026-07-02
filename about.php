@@ -1,5 +1,7 @@
 <?php
 // About Page for Douglas Electrical Solutions
+$page_title = "About Us | Dauglas Electrical Solution";
+$page_description = "Learn about Dauglas Electrical Solution. We are a trusted provider of premium electrical services in Colombo, delivering safety, reliability, and expertise for your home.";
 include_once 'header.php';
 ?>
 
@@ -7,7 +9,7 @@ include_once 'header.php';
 <section class="about-hero">
     <div class="hero-overlay"></div>
     <div class="container about-hero-container">
-        <h1 class="about-hero-title">About Douglas Electrical Solutions</h1>
+        <h1 class="about-hero-title">About Dauglas Electrical Solution - Local Colombo Electricians</h1>
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <a href="index.php">Home</a>
             <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
@@ -23,7 +25,7 @@ include_once 'header.php';
             <!-- Left Column: Electrician Image -->
             <div class="story-image-col">
                 <div class="story-img-wrapper">
-                    <img src="assets/logo.png" alt="Douglas Electrical Solutions Professional Electrician at Work">
+                    <img src="assets/logo.png" alt="Dauglas Electrical Solution Professional Electrician at Work in Colombo">
                 </div>
             </div>
             <!-- Right Column: Story Text and Highlights -->

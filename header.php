@@ -7,8 +7,80 @@ require_once 'config.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fast, reliable and professional home-visit electrical service by <?php echo $business_name; ?>. Licensed electricians offering same-day installations, repairs, and safety checks.">
-    <title><?php echo $business_name; ?> | Professional Residential Electrician Services</title>
+    <?php
+    $default_title = $business_name . " | Electrician Near Me in Colombo";
+    $default_description = "Fast, reliable and professional home-visit electrical service across all Colombo District suburbs by " . $business_name . ". Licensed electricians offering same-day installations, repairs, and safety checks.";
+    
+    $seo_title = isset($page_title) ? $page_title : $default_title;
+    $seo_description = isset($page_description) ? $page_description : $default_description;
+    
+    $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "https://"; // Force HTTPS for SEO
+    $domainName = "www.dauglaselectrical.com";
+    
+    // Remove query params or index.php for canonical
+    $uri_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+    if($uri_path == '/index.php' || $uri_path == '/') $uri_path = '';
+    
+    $current_url = $protocol . $domainName . $uri_path;
+    ?>
+    <meta name="description" content="<?php echo htmlspecialchars($seo_description); ?>">
+    <title><?php echo htmlspecialchars($seo_title); ?></title>
+    
+    <link rel="canonical" href="<?php echo htmlspecialchars($current_url); ?>">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="<?php echo htmlspecialchars($seo_title); ?>">
+    <meta property="og:description" content="<?php echo htmlspecialchars($seo_description); ?>">
+    <meta property="og:url" content="<?php echo htmlspecialchars($current_url); ?>">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="<?php echo $protocol . $domainName; ?>/assets/logo2.png">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?php echo htmlspecialchars($seo_title); ?>">
+    <meta name="twitter:description" content="<?php echo htmlspecialchars($seo_description); ?>">
+    <meta name="twitter:image" content="<?php echo $protocol . $domainName; ?>/assets/logo2.png">
+    
+    <!-- Favicon & Search Engine Logo -->
+    <link rel="icon" type="image/png" href="/assets/logo2.png">
+    <link rel="apple-touch-icon" href="/assets/logo2.png">
+    
+    <!-- Structured Data for Google to recognize the business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Electrician",
+      "name": "<?php echo htmlspecialchars($business_name); ?>",
+      "url": "<?php echo $protocol . $domainName; ?>/",
+      "logo": "<?php echo $protocol . $domainName; ?>/assets/logo2.png",
+      "image": "<?php echo $protocol . $domainName; ?>/assets/logo2.png",
+      "description": "<?php echo htmlspecialchars($default_description); ?>",
+      "telephone": "<?php echo $phone_number_raw; ?>",
+      "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": "6.9271",
+          "longitude": "79.8612"
+        },
+        "geoRadius": "30000",
+        "description": "All Colombo District Suburbs"
+      }
+    }
+    </script>
     
     <!-- Google Fonts: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

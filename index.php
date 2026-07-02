@@ -1,5 +1,7 @@
 <?php
 // Main Home Page for Douglas Electrical Solutions
+$page_title = "Home | Dauglas Electrical Solution";
+$page_description = "Welcome to Dauglas Electrical Solution. We offer fast, reliable, and professional residential electrical installations, switchboard upgrades, and emergency services in Colombo.";
 include_once 'header.php';
 ?>
 
@@ -192,11 +194,11 @@ include_once 'header.php';
         <div class="slider-wrapper">
             <div class="comparison-slider" id="comparisonSlider">
                 <!-- After Image (Background) -->
-                <img src="assets/service-switchboard.png" alt="Modern Switchboard Panel Upgrade (After)" class="slider-image image-after">
+                <img src="assets/service-switchboard.png" alt="Modern Switchboard Panel Upgrade (After)" class="slider-image image-after" loading="lazy">
                 
                 <!-- Before Image (Resizeable overlay) -->
                 <div class="image-before-wrapper" id="beforeImageWrapper">
-                    <img src="assets/switchboard_before.png" alt="Messy Outdated Fuse Box (Before)" class="slider-image image-before">
+                    <img src="assets/switchboard_before.png" alt="Messy Outdated Fuse Box (Before)" class="slider-image image-before" loading="lazy">
                 </div>
                 
                 <!-- Slide Handle Bar -->
@@ -263,7 +265,39 @@ include_once 'header.php';
     </div>
 </section>
 
-
+<!-- 5. AREAS WE SERVE & TIPS -->
+<section class="areas-tips-section section-padding" style="background-color: var(--bg-lighter);">
+    <div class="container">
+        <div class="grid-2-col" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+            <!-- Areas We Serve -->
+            <div class="areas-serve">
+                <span class="section-subtitle">Local Coverage</span>
+                <h2 class="section-title" style="margin-bottom: 20px;">Areas We Serve in Colombo</h2>
+                <p style="margin-bottom: 15px; color: var(--text-gray);">Dauglas Electrical Solution is proud to offer fast, reliable, and professional home-visit electrical services across the <strong>entire Colombo District</strong>.</p>
+                <p style="color: var(--text-gray);">Whether you're in the heart of Colombo 1-15, Nugegoda, Dehiwala, Mount Lavinia, Rajagiriya, Kotte, Wattala, Maharagama, or any surrounding suburb, our licensed technicians are ready to dispatch to your location.</p>
+                <ul style="list-style: none; padding: 0; margin-top: 20px; color: var(--white);">
+                    <li style="margin-bottom: 10px;"><i class="fa-solid fa-location-dot text-amber" style="margin-right: 10px;"></i> All Colombo District Suburbs</li>
+                    <li style="margin-bottom: 10px;"><i class="fa-solid fa-truck-fast text-amber" style="margin-right: 10px;"></i> Same-Day Local Dispatch</li>
+                    <li style="margin-bottom: 10px;"><i class="fa-solid fa-toolbox text-amber" style="margin-right: 10px;"></i> Fully Equipped Service Vehicles</li>
+                </ul>
+            </div>
+            
+            <!-- Electrical Safety Tips -->
+            <div class="safety-tips">
+                <span class="section-subtitle">Did You Know?</span>
+                <h2 class="section-title" style="margin-bottom: 20px;">Colombo Home Safety Tips</h2>
+                <div class="tip-card" style="background: var(--bg-dark); padding: 20px; border-radius: 8px; margin-bottom: 15px; border-left: 4px solid var(--amber);">
+                    <h4 style="color: var(--white); margin-bottom: 8px;">Trip Switch Testing</h4>
+                    <p style="font-size: 14px; margin: 0; color: var(--text-gray);">You should test your RCD (trip switch) every 3 months by pressing the 'T' or 'Test' button. If it doesn't trip immediately, your home is at risk.</p>
+                </div>
+                <div class="tip-card" style="background: var(--bg-dark); padding: 20px; border-radius: 8px; margin-bottom: 15px; border-left: 4px solid var(--amber);">
+                    <h4 style="color: var(--white); margin-bottom: 8px;">Monsoon Preparedness</h4>
+                    <p style="font-size: 14px; margin: 0; color: var(--text-gray);">During Colombo's heavy rains, water can seep into outdoor sockets or roof wiring. Always ensure outdoor fittings are IP-rated and weather-sealed.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- 6. CALL-TO-ACTION BANNER -->
 <section class="cta-banner">

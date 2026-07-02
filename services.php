@@ -1,5 +1,7 @@
 <?php
 // Services Page for Douglas Electrical Solutions
+$page_title = "Our Services | Dauglas Electrical Solution";
+$page_description = "Explore our professional electrical services including residential wiring, switchboard upgrades, fault finding, and emergency repairs in Colombo.";
 include_once 'header.php';
 ?>
 
@@ -188,6 +190,71 @@ include_once 'header.php';
     </div>
 </section>
 
+<!-- 4. FREQUENTLY ASKED QUESTIONS (FAQ) -->
+<section class="faq-section section-padding" style="background-color: var(--bg-dark);">
+    <div class="container">
+        <div class="section-title-wrapper text-center">
+            <span class="section-subtitle">Common Queries</span>
+            <h2 class="section-title" style="color: var(--white);">Frequently Asked Questions</h2>
+        </div>
+        
+        <div class="faq-accordion" style="max-width: 800px; margin: 0 auto;">
+            <div class="faq-item" style="background: var(--bg-lighter); margin-bottom: 15px; border-radius: 8px; padding: 20px;">
+                <h3 style="color: var(--amber); margin-bottom: 10px; font-size: 18px;">What are your response times for emergency callouts?</h3>
+                <p style="color: var(--text-gray); font-size: 15px;">We offer 24/7 emergency services and aim to reach any location within the Colombo District as quickly as possible. For urgent issues, we dispatch our nearest available technician immediately.</p>
+            </div>
+            <div class="faq-item" style="background: var(--bg-lighter); margin-bottom: 15px; border-radius: 8px; padding: 20px;">
+                <h3 style="color: var(--amber); margin-bottom: 10px; font-size: 18px;">What areas do you cover?</h3>
+                <p style="color: var(--text-gray); font-size: 15px;">We serve all suburbs within the Colombo District. Whether you are in Colombo 1-15, Nugegoda, Dehiwala, Mount Lavinia, or any other nearby suburb, our team will come directly to your home.</p>
+            </div>
+            <div class="faq-item" style="background: var(--bg-lighter); margin-bottom: 15px; border-radius: 8px; padding: 20px;">
+                <h3 style="color: var(--amber); margin-bottom: 10px; font-size: 18px;">Are your electricians certified and insured?</h3>
+                <p style="color: var(--text-gray); font-size: 15px;">Yes, Dauglas Electrical Solution is fully licensed (EL-SL-2024) and insured. All our technicians are experienced professionals who adhere to Sri Lankan safety standards and regulations.</p>
+            </div>
+            <div class="faq-item" style="background: var(--bg-lighter); margin-bottom: 15px; border-radius: 8px; padding: 20px;">
+                <h3 style="color: var(--amber); margin-bottom: 10px; font-size: 18px;">How do you charge for your services?</h3>
+                <p style="color: var(--text-gray); font-size: 15px;">Our pricing varies depending on the job. We provide clear, upfront estimates before any work begins. Please contact us directly for an accurate quote for your specific needs.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Schema JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What are your response times for emergency callouts?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We offer 24/7 emergency services and aim to reach any location within the Colombo District as quickly as possible. For urgent issues, we dispatch our nearest available technician immediately."
+    }
+  },{
+    "@type": "Question",
+    "name": "What areas do you cover?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We serve all suburbs within the Colombo District. Whether you are in Colombo 1-15, Nugegoda, Dehiwala, Mount Lavinia, or any other nearby suburb, our team will come directly to your home."
+    }
+  },{
+    "@type": "Question",
+    "name": "Are your electricians certified and insured?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, Dauglas Electrical Solution is fully licensed (EL-SL-2024) and insured. All our technicians are experienced professionals who adhere to Sri Lankan safety standards and regulations."
+    }
+  },{
+    "@type": "Question",
+    "name": "How do you charge for your services?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Our pricing varies depending on the job. We provide clear, upfront estimates before any work begins. Please contact us directly for an accurate quote for your specific needs."
+    }
+  }]
+}
+</script>
 
 
 <!-- 5. EMERGENCY CTA BANNER -->

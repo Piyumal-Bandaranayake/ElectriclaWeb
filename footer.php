@@ -48,7 +48,9 @@ require_once 'config.php';
                             <i class="fa-solid fa-phone" aria-hidden="true"></i>
                             <span>
                                 <strong>Phone Number</strong>
-                                <a href="tel:<?php echo $phone_number_raw; ?>" style="color: inherit;"><?php echo $phone_number; ?></a>
+                                <a href="tel:<?php echo $phone_number_raw; ?>" style="color: inherit;"><?php echo $phone_number; ?></a><br>
+                                <a href="tel:0783048871" style="color: inherit; font-size: 0.9em; text-decoration: none;">078 304 8871 - Mr. Rohan</a><br>
+                                <a href="tel:0758704503" style="color: inherit; font-size: 0.9em; text-decoration: none;">075 870 4503 - Mr. Sehan</a>
                             </span>
                         </li>
                         <li>
